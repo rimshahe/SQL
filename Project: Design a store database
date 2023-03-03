@@ -1,0 +1,23 @@
+CREATE TABLE scarfs (ID INTEGER PRIMARY KEY, FABRIC TEXT, COLOR TEXT, AISLE INTEGER, PRICE INTEGER);
+INSERT INTO scarfs VALUES (1, "chiffon", "beige", 2, 10);
+INSERT INTO scarfs VALUES (2, "cotton", "blue", 4, 12);
+INSERT INTO scarfs VALUES (3, "georgette", "black", 2, 9);
+INSERT INTO scarfs VALUES (4, "jersey", "gray", 7, 15);
+INSERT INTO scarfs VALUES (5, "silk", "red", 9, 20);
+INSERT INTO scarfs VALUES (6, "premium chiffon", "brown", 11, 25 );
+INSERT INTO scarfs VALUES (7, "premium jersey", "rose pink", 5, 16);
+INSERT INTO scarfs VALUES (8, "cashmere", "white", 2, 40);
+INSERT INTO scarfs VALUES (9, "wool", "green", 7, 30);
+INSERT INTO scarfs VALUES (10, "velvet", "purple", 11, 27);
+INSERT INTO scarfs VALUES (11, "net", "orange", 9, 17);
+INSERT INTO scarfs VALUES (12, "pashmina", "green", 11, 60);
+INSERT INTO scarfs VALUES (13, "linen", "gold", 2, 7);
+INSERT INTO scarfs VALUES (14, "fleece", "navy blue", 4, 12);
+INSERT INTO scarfs VALUES (15, "crinkled crepe", "burgundy", 2, 16);
+SELECT * FROM scarfs ORDER BY AISLE;
+SELECT SUM(PRICE) FROM scarfs;
+SELECT * FROM scarfs WHERE PRICE < 40 ORDER BY AISLE;
+
+
+
+
